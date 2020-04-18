@@ -18,7 +18,7 @@ class App < Sinatra::Base
     
     @number.times { |x| "#{@phrase}"}
     
-    u#ntil @number == 0 
+    #until @number == 0 
       #@number -= 1
       #"#{@phrase}"
     #end
