@@ -39,9 +39,24 @@ class App < Sinatra::Base
     word_array
   end
   
-  get  '/:operation/:number1/:number2' do 
+  get  '/:operation/:number1/:number2' do
+    @num_1 = params[:number1].to_i
+    @num_2 = params[:number2].to_i
+    
     case :operation 
       when "add"
-        
-
+        result = @num_1 + @num_2 
+        result.to_s 
+      when "subtract"
+        result = @num_1 - @num_2 
+        result.to_s 
+      when "multiply"
+        result = @num_1 * @num_2 
+        result.to_s 
+      when "divide"
+        result = @num_1 / @num_2 
+        result.to_s 
+      end
+    end
+      
 end
