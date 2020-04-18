@@ -21,10 +21,10 @@ class App < Sinatra::Base
       @number -= 1
       phrase_array << @phrase
     end
-    
     phrase_array.join(" ")
     
   end
-  
+
+get
 
 end
