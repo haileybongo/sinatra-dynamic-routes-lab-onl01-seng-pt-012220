@@ -34,7 +34,7 @@ class App < Sinatra::Base
     word_array << params[:word4]
     word_array << params[:word5]
     
-    word_array.join
+    word_array.join(" ")
   end
 
 end
