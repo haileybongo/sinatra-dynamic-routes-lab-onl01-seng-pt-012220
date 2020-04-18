@@ -39,6 +39,8 @@ class App < Sinatra::Base
     word_array
   end
   
-  get 
+  get  '/:operation/:number1/:number2' do 
+    case :operation 
+      :operation = 
 
 end
