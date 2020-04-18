@@ -16,10 +16,12 @@ class App < Sinatra::Base
     @number = params[:number].to_i 
     @phrase = params[:phrase]
     
-    until @number == 0 
-      @number -= 1
-      "#{@phrase}"
-    end
+    @number.times { |x| "#{@phrase}"}
+    
+    u#ntil @number == 0 
+      #@number -= 1
+      #"#{@phrase}"
+    #end
     
   end
   
