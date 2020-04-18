@@ -38,5 +38,7 @@ class App < Sinatra::Base
     word_array = word_array << "."
     word_array
   end
+  
+  get 
 
 end
