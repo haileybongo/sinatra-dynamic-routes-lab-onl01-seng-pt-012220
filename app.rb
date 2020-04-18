@@ -16,12 +16,14 @@ class App < Sinatra::Base
     @number = params[:number].to_i 
     @phrase = params[:phrase]
     
-    @number.times { |x| "#{@phrase}"}
+    phrase_array = []
+    until @number == 0 
+      @number -= 1
+      phrase_array << @phrase
+    end
     
-    #until @number == 0 
-      #@number -= 1
-      #"#{@phrase}"
-    #end
+    phrase_array.join(" ")
+    phrase_array
     
   end
   
