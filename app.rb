@@ -32,8 +32,9 @@ class App < Sinatra::Base
     word_array << params[:word2]
     word_array <<  params[:word3]
     word_array << params[:word4]
-    @word5 = params[:word5]
+    word_array << params[:word5]
     
-    wor
+    word_array.join
+  end
 
 end
