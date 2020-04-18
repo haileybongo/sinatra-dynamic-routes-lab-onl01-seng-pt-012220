@@ -18,7 +18,7 @@ class App < Sinatra::Base
     
     until @number == 0 
       @number -= 1
-      "#{@phrase}"
+      puts "#{@phrase}"
     end
     
   end
