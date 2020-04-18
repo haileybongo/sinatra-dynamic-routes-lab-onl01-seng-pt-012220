@@ -46,17 +46,14 @@ class App < Sinatra::Base
     case :operation 
       when "add"
         result = @num_1 + @num_2 
-        result.to_s 
       when "subtract"
         result = @num_1 - @num_2 
-        result.to_s 
       when "multiply"
         result = @num_1 * @num_2 
-        result.to_s 
       when "divide"
         result = @num_1 / @num_2 
-        result.to_s 
       end
+      "#{result.to_s}"
     end
       
 end
