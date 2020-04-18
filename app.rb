@@ -25,6 +25,15 @@ class App < Sinatra::Base
     
   end
 
-get
+  get '/say/:word1/:word2/:word3/:word4/:word5' do 
+    
+    word_array = []
+    word_array << params[:word1]
+    word_array << params[:word2]
+    word_array <<  params[:word3]
+    word_array << params[:word4]
+    @word5 = params[:word5]
+    
+    wor
 
 end
