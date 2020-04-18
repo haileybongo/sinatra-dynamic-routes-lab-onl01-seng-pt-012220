@@ -23,7 +23,6 @@ class App < Sinatra::Base
     end
     
     phrase_array.join(" ")
-    phrase_array
     
   end
   
